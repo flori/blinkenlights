@@ -1,0 +1,1735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: BlinkenLights</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/blinkenlights_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/blinkenlights.rb">lib/blinkenlights.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+			<div id="namespace-list-section" class="section">
+				<h3 class="section-header">Namespace</h3>
+				<ul class="link-list">
+					
+					<li><span class="type">MODULE</span> <a href="BlinkenLights/Constants.html">BlinkenLights::Constants</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000001">::new</a></li>
+					
+					<li><a href="#M000002">::open</a></li>
+					
+					<li><a href="#M000021">#cap</a></li>
+					
+					<li><a href="#M000022">#cap=</a></li>
+					
+					<li><a href="#M000013">#circle</a></li>
+					
+					<li><a href="#M000003">#close</a></li>
+					
+					<li><a href="#M000004">#closed?</a></li>
+					
+					<li><a href="#M000016">#converge</a></li>
+					
+					<li><a href="#M000010">#digital</a></li>
+					
+					<li><a href="#M000009">#digital=</a></li>
+					
+					<li><a href="#M000017">#diverge</a></li>
+					
+					<li><a href="#M000008">#flash</a></li>
+					
+					<li><a href="#M000039">#get</a></li>
+					
+					<li><a href="#M000041">#inspect</a></li>
+					
+					<li><a href="#M000027">#left</a></li>
+					
+					<li><a href="#M000028">#left=</a></li>
+					
+					<li><a href="#M000011">#left_to_right</a></li>
+					
+					<li><a href="#M000030">#middle</a></li>
+					
+					<li><a href="#M000031">#middle=</a></li>
+					
+					<li><a href="#M000024">#num</a></li>
+					
+					<li><a href="#M000025">#num=</a></li>
+					
+					<li><a href="#M000006">#off</a></li>
+					
+					<li><a href="#M000007">#on</a></li>
+					
+					<li><a href="#M000015">#random</a></li>
+					
+					<li><a href="#M000005">#reset</a></li>
+					
+					<li><a href="#M000014">#reverse_circle</a></li>
+					
+					<li><a href="#M000033">#right</a></li>
+					
+					<li><a href="#M000034">#right=</a></li>
+					
+					<li><a href="#M000012">#right_to_left</a></li>
+					
+					<li><a href="#M000018">#scr</a></li>
+					
+					<li><a href="#M000019">#scr=</a></li>
+					
+					<li><a href="#M000038">#set</a></li>
+					
+					<li><a href="#M000040">#to_s</a></li>
+					
+					<li><a href="#M000023">#toggle_cap</a></li>
+					
+					<li><a href="#M000029">#toggle_left</a></li>
+					
+					<li><a href="#M000032">#toggle_middle</a></li>
+					
+					<li><a href="#M000026">#toggle_num</a></li>
+					
+					<li><a href="#M000035">#toggle_right</a></li>
+					
+					<li><a href="#M000020">#toggle_scr</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+			<div id="includes-section" class="section">
+				<h3 class="section-header">Included Modules</h3>
+				<ul class="link-list">
+				
+				
+					<li><a class="include" href="BlinkenLights/Constants.html">BlinkenLights::Constants</a></li>
+				
+				
+				</ul>
+			</div>
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./doc-main_txt.html">doc-main.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./BlinkenLights.html">BlinkenLights</a></li>
+				
+					<li><a href="./BlinkenLights/Constants.html">BlinkenLights::Constants</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">BlinkenLights</h1>
+
+		<div id="description">
+			<p>
+Class that implements the functionality of the <a
+href="BlinkenLights.html">BlinkenLights</a> library.
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="delay-attribute-method" class="method-detail">
+				<a name="delay"></a>
+				
+				<a name="delay="></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">delay</span><span
+						class="attribute-access-type">[RW]</span>
+				</div>
+
+				<div class="method-description">
+				
+				<p>
+The standard delay of this <a href="BlinkenLights.html">BlinkenLights</a>
+instance.
+</p>
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="M000001"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(tty = DEF_TTY, delay = DEF_DELAY)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a <a href="BlinkenLights.html">BlinkenLights</a> instance for
+<em>tty</em>, a full pathname like &#8216;/dev/tty8&#8217; to control the
+LEDs. This parameter is ignored under the Windows operating system.
+</p>
+<p>
+<em>delay</em> is the standard delay in seconds, that is slept everytime
+the LED state is changed. If <em>delay</em> is too small your keyboard may
+become confused about its LEDs&#8217; status.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 103</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">tty</span> = <span class="ruby-constant">DEF_TTY</span>, <span class="ruby-identifier">delay</span> = <span class="ruby-constant">DEF_DELAY</span>)
+      <span class="ruby-ivar">@tty</span>      = <span class="ruby-constant">File</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">tty</span>, <span class="ruby-constant">File</span><span class="ruby-operator">::</span><span class="ruby-constant">RDWR</span>)
+      <span class="ruby-ivar">@delay</span>    = <span class="ruby-identifier">delay</span>
+      <span class="ruby-ivar">@old_leds</span> = <span class="ruby-identifier">get</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="open-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">open</span><span
+						class="method-args">(tty = DEF_TTY, delay = DEF_DELAY)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates a <a href="BlinkenLights.html">BlinkenLights</a> instance and
+yields to it. After the block returns the <a
+href="BlinkenLights.html#M000003">BlinkenLights#close</a> method is called.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="open-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 116</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">tty</span> = <span class="ruby-constant">DEF_TTY</span>, <span class="ruby-identifier">delay</span> = <span class="ruby-constant">DEF_DELAY</span>)
+    <span class="ruby-identifier">obj</span> = <span class="ruby-identifier">new</span>(<span class="ruby-identifier">tty</span>, <span class="ruby-identifier">delay</span>)
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">block_given?</span>
+      <span class="ruby-keyword kw">begin</span>
+        <span class="ruby-keyword kw">yield</span> <span class="ruby-identifier">obj</span>
+      <span class="ruby-keyword kw">ensure</span>
+        <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">close</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">obj</span>
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-identifier">obj</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="cap-method" class="method-detail ">
+				<a name="M000021"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">cap</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the Caps Lock LED: true for switched on, false for off.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="cap-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 280</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cap</span>
+    (<span class="ruby-identifier">get</span> <span class="ruby-operator">&amp;</span> <span class="ruby-constant">LED_CAP</span>) <span class="ruby-operator">!=</span> <span class="ruby-constant">LED_NONE</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="cap--method" class="method-detail ">
+				<a name="M000022"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">cap=</span><span
+						class="method-args">(toggle)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the Caps Lock LED on, if <em>toggle</em> is true, off, otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="cap--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 285</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cap=</span>(<span class="ruby-identifier">toggle</span>)
+    <span class="ruby-identifier">old</span> = <span class="ruby-identifier">get</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">toggle</span>
+      <span class="ruby-identifier">set</span> <span class="ruby-identifier">old</span> <span class="ruby-operator">|</span> <span class="ruby-constant">LED_CAP</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-identifier">set</span> <span class="ruby-identifier">old</span> <span class="ruby-operator">&amp;</span> <span class="ruby-operator">~</span><span class="ruby-constant">LED_CAP</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="circle-method" class="method-detail ">
+				<a name="M000013"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">circle</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Blink all the LEDs from the left to the right, and then from the right to
+the left. Sleep for <em>delay</em> seconds in between.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="circle-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 214</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">circle</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-identifier">left_to_right</span>(<span class="ruby-identifier">delay</span>)
+    <span class="ruby-identifier">right_to_left</span>(<span class="ruby-identifier">delay</span>)
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="close-method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">close</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Close the open console tty after resetting LEDs to the original state.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="close-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 130</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">close</span>
+    <span class="ruby-identifier">reset</span>
+    <span class="ruby-ivar">@tty</span>.<span class="ruby-identifier">close</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="closed--method" class="method-detail ">
+				<a name="M000004"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">closed?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return true if the constants tty has been closed.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="closed--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 137</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">closed?</span>
+    <span class="ruby-ivar">@tty</span>.<span class="ruby-identifier">closed?</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="converge-method" class="method-detail ">
+				<a name="M000016"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">converge</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Converge, that is, first blink the outer LEDs, then blink the inner LED.
+Sleep for <em>delay</em> seconds in between.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="converge-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 237</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">converge</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> [ <span class="ruby-constant">LED_LEFT</span><span class="ruby-operator">|</span><span class="ruby-constant">LED_RIGHT</span>, <span class="ruby-constant">LED_MIDDLE</span> ]
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">i</span>
+      <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="digital-method" class="method-detail ">
+				<a name="M000010"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">digital</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the LEDs expressed in binary digital mode.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="digital-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 181</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">digital</span>
+    <span class="ruby-identifier">setting</span> = <span class="ruby-identifier">get</span>
+    <span class="ruby-identifier">result</span>  = <span class="ruby-value">0</span>
+    <span class="ruby-value">2</span>.<span class="ruby-identifier">downto</span>(<span class="ruby-value">0</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">setting</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+        <span class="ruby-identifier">result</span> <span class="ruby-operator">|=</span> <span class="ruby-value">1</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-value">2</span> <span class="ruby-operator">-</span> <span class="ruby-constant">LEDS_VALUES</span>.<span class="ruby-identifier">index</span>(<span class="ruby-value">1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">i</span>))
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">result</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="digital--method" class="method-detail ">
+				<a name="M000009"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">digital=</span><span
+						class="method-args">(number)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set LEDs to <em>number</em> in binary digital mode.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="digital--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 169</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">digital=</span>(<span class="ruby-identifier">number</span>)
+    <span class="ruby-identifier">number</span> <span class="ruby-operator">%=</span> <span class="ruby-value">8</span>
+    <span class="ruby-identifier">setting</span> = <span class="ruby-value">0</span>
+    <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-value">2</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">number</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+        <span class="ruby-identifier">setting</span> <span class="ruby-operator">|=</span> <span class="ruby-value">1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">DIGITAL</span>.<span class="ruby-identifier">index</span>(<span class="ruby-constant">LEDS</span>[<span class="ruby-value">2</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">i</span>])
+      <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-identifier">set</span> <span class="ruby-identifier">setting</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="diverge-method" class="method-detail ">
+				<a name="M000017"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">diverge</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Diverge, that is, first blink the inner LED, then blink the outer LEDs.
+Sleep for <em>delay</em> seconds in between.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="diverge-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 247</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">diverge</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> [ <span class="ruby-constant">LED_MIDDLE</span>, <span class="ruby-constant">LED_LEFT</span><span class="ruby-operator">|</span><span class="ruby-constant">LED_RIGHT</span> ]
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">i</span>
+      <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="flash-method" class="method-detail ">
+				<a name="M000008"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">flash</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+First switches all LEDs on, then off. Sleep for <em>delay</em> seconds
+after switching them on.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="flash-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 162</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">flash</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-identifier">on</span>
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-identifier">off</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="get-method" class="method-detail ">
+				<a name="M000039"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the LEDs as an integer <em>number</em>. (Quite low
+level)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 421</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get</span>
+      <span class="ruby-identifier">char</span> = [<span class="ruby-value">0</span>].<span class="ruby-identifier">pack</span>(<span class="ruby-value str">'C'</span>)
+      <span class="ruby-ivar">@tty</span>.<span class="ruby-identifier">ioctl</span>(<span class="ruby-constant">KDGETLED</span>, <span class="ruby-identifier">char</span>)
+      <span class="ruby-identifier">char</span>.<span class="ruby-identifier">unpack</span>(<span class="ruby-value str">'C'</span>)[<span class="ruby-value">0</span>]
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail method-alias">
+				<a name="M000041"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Alias for <a href="BlinkenLights.html#M000040">to_s</a>
+</p>
+					
+
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="left-method" class="method-detail ">
+				<a name="M000027"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">left</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the left LED: true for switched on, false for off.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="left-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 326</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">left</span>
+    (<span class="ruby-identifier">digital</span> <span class="ruby-operator">&amp;</span> <span class="ruby-constant">LED_LEFT</span>) <span class="ruby-operator">!=</span> <span class="ruby-constant">LED_NONE</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="left--method" class="method-detail ">
+				<a name="M000028"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">left=</span><span
+						class="method-args">(toggle)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the left LED on, if <em>toggle</em> is true, off, otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="left--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 331</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">left=</span>(<span class="ruby-identifier">toggle</span>)
+    <span class="ruby-identifier">old</span> = <span class="ruby-identifier">digital</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">toggle</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">old</span> <span class="ruby-operator">|</span> <span class="ruby-constant">LED_LEFT</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">old</span> <span class="ruby-operator">&amp;</span> <span class="ruby-operator">~</span><span class="ruby-constant">LED_LEFT</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="left-to-right-method" class="method-detail ">
+				<a name="M000011"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">left_to_right</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Blink all the LEDs from the left to the right. Sleep for <em>delay</em>
+seconds in between.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="left-to-right-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 194</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">left_to_right</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> [ <span class="ruby-constant">LED_LEFT</span>, <span class="ruby-constant">LED_MIDDLE</span>, <span class="ruby-constant">LED_RIGHT</span> ]
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">i</span>
+      <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="middle-method" class="method-detail ">
+				<a name="M000030"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">middle</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the middle LED: true for switched on, false for off.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="middle-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 349</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">middle</span>
+    (<span class="ruby-identifier">digital</span> <span class="ruby-operator">&amp;</span> <span class="ruby-constant">LED_MIDDLE</span>) <span class="ruby-operator">!=</span> <span class="ruby-constant">LED_NONE</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="middle--method" class="method-detail ">
+				<a name="M000031"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">middle=</span><span
+						class="method-args">(toggle)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the middle LED on, if <em>toggle</em> is true, off, otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="middle--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 354</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">middle=</span>(<span class="ruby-identifier">toggle</span>)
+    <span class="ruby-identifier">old</span> = <span class="ruby-identifier">digital</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">toggle</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">old</span> <span class="ruby-operator">|</span> <span class="ruby-constant">LED_MIDDLE</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">old</span> <span class="ruby-operator">&amp;</span> <span class="ruby-operator">~</span><span class="ruby-constant">LED_MIDDLE</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="num-method" class="method-detail ">
+				<a name="M000024"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">num</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the Num Lock LED: true for switched on, false for off.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="num-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 303</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">num</span>
+    (<span class="ruby-identifier">get</span> <span class="ruby-operator">&amp;</span> <span class="ruby-constant">LED_NUM</span>) <span class="ruby-operator">!=</span> <span class="ruby-constant">LED_NONE</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="num--method" class="method-detail ">
+				<a name="M000025"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">num=</span><span
+						class="method-args">(toggle)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the Num Lock LED on, if <em>toggle</em> is true, off, otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="num--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 308</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">num=</span>(<span class="ruby-identifier">toggle</span>)
+    <span class="ruby-identifier">old</span> = <span class="ruby-identifier">get</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">toggle</span>
+      <span class="ruby-identifier">set</span> <span class="ruby-identifier">old</span> <span class="ruby-operator">|</span> <span class="ruby-constant">LED_NUM</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-identifier">set</span> <span class="ruby-identifier">old</span> <span class="ruby-operator">&amp;</span> <span class="ruby-operator">~</span><span class="ruby-constant">LED_NUM</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="off-method" class="method-detail ">
+				<a name="M000006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">off</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch off all LEDs.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="off-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 149</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">off</span>
+    <span class="ruby-identifier">set</span> <span class="ruby-constant">LED_NONE</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="on-method" class="method-detail ">
+				<a name="M000007"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">on</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch on all LEDs.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="on-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 155</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">on</span>
+    <span class="ruby-identifier">set</span> <span class="ruby-constant">LED_ALL</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="random-method" class="method-detail ">
+				<a name="M000015"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">random</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch some of the LEDs on by random. Then sleep for <em>delay</em>
+seconds.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="random-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 229</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">random</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-constant">LED_ALL</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>)
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="reset-method" class="method-detail ">
+				<a name="M000005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">reset</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Resets the LED state to the starting state (when the <a
+href="BlinkenLights.html">BlinkenLights</a> object was created).
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="reset-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 143</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">reset</span>
+    <span class="ruby-identifier">set</span> <span class="ruby-ivar">@old_leds</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="reverse-circle-method" class="method-detail ">
+				<a name="M000014"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">reverse_circle</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Blink all the LEDs from the right to the left, and then from the left to
+the right. Sleep for <em>delay</em> seconds in between.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="reverse-circle-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 222</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">reverse_circle</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-identifier">right_to_left</span>(<span class="ruby-identifier">delay</span>)
+    <span class="ruby-identifier">left_to_right</span>(<span class="ruby-identifier">delay</span>)
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="right-method" class="method-detail ">
+				<a name="M000033"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">right</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the right LED: true for switched on, false for off.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="right-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 372</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">right</span>
+    (<span class="ruby-identifier">digital</span> <span class="ruby-operator">&amp;</span> <span class="ruby-constant">LED_RIGHT</span>) <span class="ruby-operator">!=</span> <span class="ruby-constant">LED_NONE</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="right--method" class="method-detail ">
+				<a name="M000034"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">right=</span><span
+						class="method-args">(toggle)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the right LED on, if <em>toggle</em> is true, off, otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="right--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 377</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">right=</span>(<span class="ruby-identifier">toggle</span>)
+    <span class="ruby-identifier">old</span> = <span class="ruby-identifier">digital</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">toggle</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">old</span> <span class="ruby-operator">|</span> <span class="ruby-constant">LED_RIGHT</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">old</span> <span class="ruby-operator">&amp;</span> <span class="ruby-operator">~</span><span class="ruby-constant">LED_RIGHT</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="right-to-left-method" class="method-detail ">
+				<a name="M000012"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">right_to_left</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Blink all the LEDs from the right to the left. Sleep for <em>delay</em>
+seconds in between.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="right-to-left-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 204</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">right_to_left</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> [ <span class="ruby-constant">LED_RIGHT</span>, <span class="ruby-constant">LED_MIDDLE</span>, <span class="ruby-constant">LED_LEFT</span> ]
+      <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">digital</span> = <span class="ruby-identifier">i</span>
+      <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="scr-method" class="method-detail ">
+				<a name="M000018"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">scr</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return the state of the Scroll Lock LED: true for switched on, false for
+off.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="scr-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 257</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">scr</span>
+    (<span class="ruby-identifier">get</span> <span class="ruby-operator">&amp;</span> <span class="ruby-constant">LED_SCR</span>) <span class="ruby-operator">!=</span> <span class="ruby-constant">LED_NONE</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="scr--method" class="method-detail ">
+				<a name="M000019"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">scr=</span><span
+						class="method-args">(toggle)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the Scroll Lock LED on, if <em>toggle</em> is true, off, otherwise.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="scr--source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 262</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">scr=</span>(<span class="ruby-identifier">toggle</span>)
+    <span class="ruby-identifier">old</span> = <span class="ruby-identifier">get</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">toggle</span>
+      <span class="ruby-identifier">set</span> <span class="ruby-identifier">old</span> <span class="ruby-operator">|</span> <span class="ruby-constant">LED_SCR</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-identifier">set</span> <span class="ruby-identifier">old</span> <span class="ruby-operator">&amp;</span> <span class="ruby-operator">~</span><span class="ruby-constant">LED_SCR</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="set-method" class="method-detail ">
+				<a name="M000038"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">set</span><span
+						class="method-args">(number)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Set the state of the LEDs to integer <em>number</em>. (Quite low level)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="set-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 414</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set</span>(<span class="ruby-identifier">number</span>)
+      <span class="ruby-ivar">@tty</span>.<span class="ruby-identifier">ioctl</span>(<span class="ruby-constant">KDSETLED</span>, <span class="ruby-identifier">number</span>)
+      <span class="ruby-identifier">sleep</span> <span class="ruby-ivar">@delay</span>
+      <span class="ruby-identifier">number</span>
+    <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="to-s-method" class="method-detail ">
+				<a name="M000040"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_s</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return a string representation of this <a
+href="BlinkenLights.html">BlinkenLights</a> instance, showing some
+interesting data.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="to-s-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 430</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>
+    <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@tty</span>.<span class="ruby-identifier">closed?</span>
+      <span class="ruby-node">&quot;#&lt;#{self.class}: closed&gt;&quot;</span>
+    <span class="ruby-keyword kw">else</span>
+      <span class="ruby-node">&quot;#&lt;#{self.class}: delay=#{@delay}s, tty=#{@tty.path},&quot;</span> <span class="ruby-operator">+</span>
+      <span class="ruby-node">&quot; LEDs=#{'%03b' % self.digital}&gt;&quot;</span>
+    <span class="ruby-keyword kw">end</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+				<div class="aliases">
+					Also aliased as: <a href="BlinkenLights.html#M000041">inspect</a>
+				</div>
+				
+			</div>
+
+		
+			<div id="toggle-cap-method" class="method-detail ">
+				<a name="M000023"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">toggle_cap</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the Caps Lock LED on, if it was off before. Switch the Caps Lock LED
+off, if it was on before.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="toggle-cap-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 296</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">toggle_cap</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">cap</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">cap</span>
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="toggle-left-method" class="method-detail ">
+				<a name="M000029"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">toggle_left</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the left LED on, if it was off before. Switch the left LED off, if
+it was on before.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="toggle-left-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 342</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">toggle_left</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">left</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">left</span>
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="toggle-middle-method" class="method-detail ">
+				<a name="M000032"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">toggle_middle</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the middle LED on, if it was off before. Switch the middle LED off,
+if it was on before.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="toggle-middle-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 365</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">toggle_middle</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">middle</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">middle</span>
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="toggle-num-method" class="method-detail ">
+				<a name="M000026"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">toggle_num</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the Num Lock LED on, if it was off before. Switch the Num Lock LED
+off, if it was on before.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="toggle-num-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 319</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">toggle_num</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">num</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">num</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="toggle-right-method" class="method-detail ">
+				<a name="M000035"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">toggle_right</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the right LED on, if it was off before. Switch the right off, if it
+was on before.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="toggle-right-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 388</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">toggle_right</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">right</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">right</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="toggle-scr-method" class="method-detail ">
+				<a name="M000020"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">toggle_scr</span><span
+						class="method-args">(delay = 0.0)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Switch the Scroll Lock LED on, if it was off before. Switch the Scroll Lock
+LED off, if it was on before.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="toggle-scr-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/blinkenlights.rb, line 273</span>
+  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">toggle_scr</span>(<span class="ruby-identifier">delay</span> = <span class="ruby-value">0</span><span class="ruby-value">.0</span>)
+    <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">scr</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">scr</span>
+    <span class="ruby-identifier">sleep</span> <span class="ruby-identifier">delay</span>
+    <span class="ruby-keyword kw">self</span>
+  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

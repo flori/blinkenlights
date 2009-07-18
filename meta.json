@@ -1,0 +1,11 @@
+{
+  "author": "Florian Frank",
+  "author_email": "flori@ping.de",
+  "documentation_url": "doc\/index.html",
+  "download_url": "http:\/\/rubyforge.org\/frs\/?group_id=1021",
+  "github_url": "http:\/\/github.com\/flori\/blinkenlights\/tree\/master",
+  "homepage_url": "http:\/\/flori.github.com\/blinkenlights",
+  "project_name": "Blinkenlights in Ruby",
+  "project_unixname": "blinkenlights",
+  "project_url": "http:\/\/rubyforge.org\/projects\/blinkenlights"
+}

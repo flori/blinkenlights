@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: doc-main.txt [RDoc Documentation]</title>
+
+	<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./doc-main_txt.html">doc-main.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./BlinkenLights.html">BlinkenLights</a></li>
+				
+					<li><a href="./BlinkenLights/Constants.html">BlinkenLights::Constants</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h2><a href="BlinkenLights.html">BlinkenLights</a> - Controlling the keyboard LEDs from Ruby</h2>
+<h3>Author</h3>
+<p>
+Florian Frank <a href="mailto:flori@ping.de">flori@ping.de</a>
+</p>
+<h3>License</h3>
+<p>
+This is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License Version 2 as published by the Free
+Software Foundation: <a
+href="http://www.gnu.org/copyleft/gpl.html">www.gnu.org/copyleft/gpl.html</a>
+</p>
+<h3>Download</h3>
+<p>
+The latest version of <b>blinkenlights</b> can be found at
+</p>
+<ul>
+<li><a
+href="http://rubyforge.org/frs/?group_id=1021">rubyforge.org/frs/?group_id=1021</a>
+
+</li>
+</ul>
+<p>
+The homepage of this library is located at
+</p>
+<ul>
+<li><a
+href="http://blinkenlights.rubyforge.org">blinkenlights.rubyforge.org</a>
+
+</li>
+</ul>
+<h3>Description</h3>
+<p>
+This Ruby library is named after an old joke, see
+</p>
+<pre>
+  http://catb.org/~esr/jargon/html/B/blinkenlights.html
+</pre>
+<p>
+It enables you to control the LEDs on your keyboard to signal digital
+numbers between 0 and 7, events like received/transmitted network packets,
+or just let them blink in visually pleasing patterns.
+</p>
+<p>
+<b>Beware</b>: If you use <a href="BlinkenLights.html">BlinkenLights</a>
+under Windows, not only the leds are switched on/off but also the related
+keys are pressed/unpressed! This could be quite confusing. ;)
+</p>
+<h3>Examples</h3>
+<p>
+The block form opens the TTY, that controls the LEDs, and closes/resets the
+LEDs it after the block has been processed:
+</p>
+<pre>
+ require 'blinkenlights'
+ BlinkenLights.open do |bl|
+   bl.off
+   bl.circle
+ end
+</pre>
+<p>
+It&#8217;s also possible to manually close the object:
+</p>
+<pre>
+ require 'blinkenlights'
+ bl = BlinkenLights.new
+ bl.off
+ 100.times { bl.random }
+ bl.close
+</pre>
+<p>
+There are also two short examples examples/netblinker.rb and
+examples/loadbar.rb in the distribution directory of this library, that
+show how to let the lights blink if network packets are
+received/transmitted on your host or to indicate how high the cpu load
+average is.
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

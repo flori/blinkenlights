@@ -1,0 +1,11 @@
+<h2>Description</h2>
+<p>
+This pure Ruby library enables you to control the LEDs on your keyboard to
+signal digital numbers between 0 and 7, events like received/transmitted
+network packets, or just let them blink in visually pleasing patterns.
+</p>
+<p>
+Make sure to have sufficient permissions to access the device (e.g.
+/dev/console or /dev/tty8) that controls the keyboard. Running your script as
+root should always help. :)
+</p>
