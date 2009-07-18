@@ -1,0 +1,56 @@
+== BlinkenLights - Controlling the keyboard LEDs from Ruby
+
+=== Author
+
+Florian Frank mailto:flori@ping.de
+
+=== License
+
+This is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License Version 2 as published by the Free
+Software Foundation: www.gnu.org/copyleft/gpl.html
+
+=== Download
+
+The latest version of <b>blinkenlights</b> can be found at
+
+* http://rubyforge.org/frs/?group_id=1021
+
+The homepage of this library is located at
+
+* http://blinkenlights.rubyforge.org
+
+=== Description
+
+This Ruby library is named after an old joke, see
+  http://catb.org/~esr/jargon/html/B/blinkenlights.html
+
+It enables you to control the LEDs on your keyboard to signal digital numbers
+between 0 and 7, events like received/transmitted network packets, or just
+let them blink in visually pleasing patterns.
+
+*Beware*: If you use BlinkenLights under Windows, not only the leds are
+switched on/off but also the related keys are pressed/unpressed! This could
+be quite confusing. ;)
+
+=== Examples
+
+The block form opens the TTY, that controls the LEDs, and closes/resets
+the LEDs  it after the block has been processed:
+ require 'blinkenlights'
+ BlinkenLights.open do |bl|
+   bl.off
+   bl.circle
+ end
+
+It's also possible to manually close the object:
+ require 'blinkenlights'
+ bl = BlinkenLights.new
+ bl.off
+ 100.times { bl.random }
+ bl.close
+
+There are also two short examples examples/netblinker.rb and
+examples/loadbar.rb in the distribution directory of this library, that show
+how to let the lights blink if network packets are received/transmitted on
+your host or to indicate how high the cpu load average is.

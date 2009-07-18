@@ -1,0 +1,11 @@
+2009-06-30 - 0.1.0  *
+2006-06-09 - 0.0.4  * Added unit tests.
+                    * Disabled autorequire in Rakefile
+                    * closed BlinkenLights instances now throw IO::Error on
+                      Windows, too.
+                    * Improved documentation further.
+2006-06-08 - 0.0.3  * Added support for Windows. The relevant code parts were
+                      contributed by Dave Burt <dave@burt.id.au>. Thanks a lot!
+2005-10-18 - 0.0.2  * Some small bugs fixed
+                    * flash method added
+                    * additional example
