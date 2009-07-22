@@ -1,9 +1,9 @@
 Requirements
 ============
 
-This library requires Linux at the moment, and isn't usable on other Unixes
-(yet). Depending on your keyboard LED positions some tweaking may be necessary,
-see the RDOC documentation.
+This library requires Linux or Windows at the moment, and isn't usable on other
+Unixes (yet). Depending on your keyboard LED positions some tweaking may be
+necessary, see the RDOC documentation.
 
 Installation
 ============
