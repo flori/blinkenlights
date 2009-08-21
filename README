@@ -12,8 +12,8 @@ Just type into the command line as root:
 
 # ruby install.rb
 
-Or if you already use rubygems (you should!) just type and rubygems fetches
-the gem and installs it for you:
+Or if you already use rubygems (you should!) just type this and rubygems
+fetches the gem and installs it for you:
 
 # gem install blinkenlights
 
